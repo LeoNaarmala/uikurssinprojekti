@@ -1,0 +1,218 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: content_panel
+    components: []
+- name: outlined_card_1
+  properties: {role: outlined-card}
+  type: ColumnPanel
+  layout_properties: {slot: default}
+  components:
+  - name: text_box_1
+    properties: {text: CALENDAR, align: center, bold: true}
+    type: TextBox
+    layout_properties: {grid_position: 'SEAENY,OSZJBT', full_width_row: false}
+  - name: outlined_button_1
+    properties: {text: "\ud83e\udc70", role: outlined-button}
+    type: Button
+    layout_properties: {grid_position: 'GYOJIJ,EHZJMD'}
+    event_bindings: {click: outlined_button_1_click}
+  - name: button_1
+    properties: {text: March}
+    type: Button
+    layout_properties: {grid_position: 'GYOJIJ,QNNXDJ'}
+  - name: outlined_button_2
+    properties: {text: "\ud83e\udc72", role: outlined-button}
+    type: Button
+    layout_properties: {grid_position: 'GYOJIJ,AMRKDX'}
+  - name: data_grid_1
+    properties:
+      columns:
+      - {id: JKSDUP, title: Monday, data_key: column_1}
+      - {id: VJQQOR, title: Tuesday, data_key: column_2}
+      - {id: OJLQEN, title: Wednesday, data_key: column_3}
+      - {id: LMQZWO, data_key: column_4, title: Thursday}
+      - {id: WRQFAR, data_key: column_5, title: Friday}
+      - {id: TITZRS, data_key: column_6, title: Saturday}
+      - {id: ACBUNT, data_key: column_7, title: Sunday}
+      wrap_on: mobile
+      rows_per_page: 4
+    type: DataGrid
+    components:
+    - name: data_row_panel_1
+      properties: {}
+      type: DataRowPanel
+      components:
+      - name: button_4
+        properties: {text: '5'}
+        type: Button
+        layout_properties: {column: WRQFAR}
+        event_bindings: {click: button_4_click}
+      - name: label_1
+        properties: {text: '2', align: center}
+        type: Label
+        layout_properties: {column: VJQQOR}
+      - name: label_2
+        properties: {text: '4', align: center}
+        type: Label
+        layout_properties: {column: LMQZWO}
+      - name: button_2
+        properties: {text: '1'}
+        type: Button
+        layout_properties: {column: JKSDUP}
+        event_bindings: {click: button_2_click}
+      - name: label_3
+        properties: {text: '3', align: center}
+        type: Label
+        layout_properties: {column: OJLQEN}
+      - name: label_4
+        properties: {text: '6', align: center}
+        type: Label
+        layout_properties: {column: TITZRS}
+      - name: label_5
+        properties: {text: '7', align: center}
+        type: Label
+        layout_properties: {column: ACBUNT}
+    - name: data_row_panel_2
+      properties: {}
+      type: DataRowPanel
+      components:
+      - name: button_3
+        properties: {text: '10'}
+        type: Button
+        layout_properties: {column: OJLQEN}
+        event_bindings: {click: button_3_click}
+      - name: data_row_panel_5
+        properties: {}
+        type: DataRowPanel
+        layout_properties: {}
+        components:
+        - name: label_11
+          properties: {text: '15', align: center}
+          type: Label
+          layout_properties: {column: JKSDUP}
+        - name: label_12
+          properties: {text: '16', align: center}
+          type: Label
+          layout_properties: {column: VJQQOR}
+        - name: label_13
+          properties: {align: center, text: '17'}
+          type: Label
+          layout_properties: {column: OJLQEN}
+        - name: label_14
+          properties: {text: '18', align: center}
+          type: Label
+          layout_properties: {column: LMQZWO}
+        - name: label_15
+          properties: {text: '19', align: center}
+          type: Label
+          layout_properties: {column: WRQFAR}
+        - name: label_16
+          properties: {text: '20', align: center}
+          type: Label
+          layout_properties: {column: TITZRS}
+        - name: label_17
+          properties: {text: '21', align: center}
+          type: Label
+          layout_properties: {column: ACBUNT}
+      - name: data_row_panel_6
+        properties: {}
+        type: DataRowPanel
+        layout_properties: {}
+        components:
+        - name: label_18
+          properties: {text: '22', align: center}
+          type: Label
+          layout_properties: {column: JKSDUP}
+        - name: label_19
+          properties: {text: '23', align: center}
+          type: Label
+          layout_properties: {column: VJQQOR}
+        - name: label_20
+          properties: {text: '24', align: center}
+          type: Label
+          layout_properties: {column: OJLQEN}
+        - name: label_21
+          properties: {text: '25', align: center}
+          type: Label
+          layout_properties: {column: LMQZWO}
+        - name: label_22
+          properties: {text: '26', align: center}
+          type: Label
+          layout_properties: {column: WRQFAR}
+        - name: label_23
+          properties: {text: '27', align: center}
+          type: Label
+          layout_properties: {column: TITZRS}
+        - name: label_24
+          properties: {text: '28', align: center}
+          type: Label
+          layout_properties: {column: ACBUNT}
+      - name: data_row_panel_7
+        properties: {}
+        type: DataRowPanel
+        layout_properties: {column: 'null'}
+        components:
+        - name: button_5
+          properties: {text: '31'}
+          type: Button
+          layout_properties: {column: OJLQEN}
+          event_bindings: {click: button_5_click}
+        - name: label_25
+          properties: {text: '29', align: center}
+          type: Label
+          layout_properties: {column: JKSDUP}
+        - name: label_26
+          properties: {text: '30', align: center}
+          type: Label
+          layout_properties: {column: VJQQOR}
+        - name: label_27
+          properties: {align: center, text: ' '}
+          type: Label
+          layout_properties: {column: LMQZWO}
+        - name: label_28
+          properties: {text: ' '}
+          type: Label
+          layout_properties: {column: WRQFAR}
+        - name: label_29
+          properties: {text: ' '}
+          type: Label
+          layout_properties: {column: TITZRS}
+        - name: label_30
+          properties: {text: ' '}
+          type: Label
+          layout_properties: {column: ACBUNT}
+      - name: label_6
+        properties: {text: '8', align: center}
+        type: Label
+        layout_properties: {column: JKSDUP}
+      - name: label_7
+        properties: {text: '11', align: center}
+        type: Label
+        layout_properties: {column: LMQZWO}
+      - name: label_8
+        properties: {text: '12', align: center}
+        type: Label
+        layout_properties: {column: WRQFAR}
+      - name: label_9
+        properties: {text: '13', align: center}
+        type: Label
+        layout_properties: {column: TITZRS}
+      - name: label_10
+        properties: {text: '14', align: center}
+        type: Label
+        layout_properties: {column: ACBUNT}
+      - name: label_31
+        properties: {text: '9', align: center}
+        type: Label
+        layout_properties: {column: VJQQOR}
+    layout_properties: {grid_position: 'ZAVVUE,CDHMUP'}

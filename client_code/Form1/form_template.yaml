@@ -4,10 +4,36 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: outlined_card_1
+    properties: {role: outlined-card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'QQDYGA,YNYCXR'}
+    components:
+    - name: button_1
+      properties: {text: "\ud83e\udc70", align: left}
+      type: Button
+      layout_properties: {grid_position: 'LHBVTY,QHBCRT'}
+      event_bindings: {click: button_1_click}
+    - name: label_1
+      properties: {text: Tasks to do, align: left, bold: true}
+      type: Label
+      layout_properties: {grid_position: 'LHBVTY,FYTAOX'}
+    - name: outlined_1
+      properties: {role: outlined, text: Assignment 3}
+      type: TextBox
+      layout_properties: {grid_position: 'QMIPLC,ZSJUDQ'}
+    - name: outlined_2
+      properties: {role: outlined, text: Task 5}
+      type: TextBox
+      layout_properties: {grid_position: 'HVFLLE,SOZZHV'}
+    - name: outlined_3
+      properties: {role: outlined, text: Group project}
+      type: TextBox
+      layout_properties: {grid_position: 'JMINZE,RVLVUH'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
